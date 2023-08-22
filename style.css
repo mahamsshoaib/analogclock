@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size:3vw;
+    
+}
+body{
+    height: 100vh;;
+    border:1px solid red;
+
+    /*S*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-container{
+    border:2px solid green;
+
+    /*S*/
+    width:80%;
+    height:90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.clock{
+    border:1px solid black;
+
+    /*S*/
+    width:37vw;
+    height:37vw;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /**/
+    position: relative;
+
+}
+.dot{
+    position: absolute;
+    font-weight: bold;
+    transform-origin:center;
+    /*transform:translate(-50%,-50%);*/
+}
+.hands{
+    position:absolute;
+
+    /**/
+}
+.hours-hand{
+    width:4px;
+    height:7.5vw;
+    background-color: #000;
+}
+.minutes-hand{
+
+    width:4px;
+    height:15vw;
+    background-color: #000;
+   
+}
+.seconds-hand{
+    width:2px;
+    height:15vw;
+    background-color: #000;
+}
+.number{
+    position: absolute;
+    transform-origin:center;
+    font-weight:bold;
+    /*transform: translate(-50%,-100%);*/
+}
+.one{
+    transform: translate(550%,-400%);
+}
+.two{
+    transform: translate(950%,-200%);
+}
+.three{
+    transform: translateX(1100%);
+}
+.four{
+    transform: translate(950%,200%);
+
+}
+.five{
+    transform: translate(650%,400%);
+
+}
+.six{
+    transform: translateY(450%);
+}
+.seven{
+    transform: translate(-650%,400%);
+
+}
+.eight{
+    transform: translate(-950%,200%);
+}
+.nine{
+    transform:translateX(-1100%);
+}
+.ten{
+    transform: translate(-470%,-200%);
+}
+.eleven{
+    transform: translate(-340%,-388%);
+}
+.tewelve{
+    transform: translateY(-450%);
+}
+
