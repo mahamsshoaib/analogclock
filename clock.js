@@ -13,10 +13,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const minuteRotation = (minute * 6) + (0.1 * second); // 6 degrees per minute, 0.1 degrees per second
     const secondRotation = second * 6; // 6 degrees per second
   
-    hourHand.style.transform = `translate(0, 0) rotate(${hourRotation}deg)`;
-    minuteHand.style.transform = `translate(0, 0) rotate(${minuteRotation}deg)`;
-    secondHand.style.transform = `translate(0, 0) rotate(${secondRotation}deg)`;
-  }
+    hourHand.style.transform = `rotate(${hourRotation}deg)`;
+    minuteHand.style.transform = `rotate(${minuteRotation}deg)`;
+    secondHand.style.transform = `rotate(${secondRotation}deg)`;
+    
+}
   
   // Update the clock every second
   setInterval(updateClock, 1000);

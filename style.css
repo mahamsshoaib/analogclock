@@ -8,16 +8,12 @@
 body{
     height: 100vh;;
     border:1px solid red;
-
-    /*S*/
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .main-container{
     border:2px solid green;
-
-    /*S*/
     width:80%;
     height:90%;
     display: flex;
@@ -28,16 +24,12 @@ body{
 }
 .clock{
     border:1px solid black;
-
-    /*S*/
     width:37vw;
     height:37vw;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    /**/
     position: relative;
 
 }
@@ -45,35 +37,42 @@ body{
     position: absolute;
     font-weight: bold;
     transform-origin:center;
-    /*transform:translate(-50%,-50%);*/
+    width:5%;
+    height:5%;
+    border-radius:50%;
+    background-color: black;;
 }
 .hands{
     position:absolute;
-
-    /**/
 }
 .hours-hand{
     width:4px;
     height:7.5vw;
     background-color: #000;
+    top:30%;
+    transform-origin: bottom;
+    
 }
 .minutes-hand{
 
     width:4px;
-    height:15vw;
+    height:14vw;
     background-color: #000;
-   
+    top:12%;
+    transform-origin: bottom;
 }
-.seconds-hand{
+
+.seconds-hand {
     width:2px;
-    height:15vw;
+    height:14vw;
     background-color: #000;
+    top:12%;  
+    transform-origin: bottom;
 }
 .number{
     position: absolute;
     transform-origin:center;
     font-weight:bold;
-    /*transform: translate(-50%,-100%);*/
 }
 .one{
     transform: translate(550%,-400%);
@@ -86,18 +85,15 @@ body{
 }
 .four{
     transform: translate(950%,200%);
-
 }
 .five{
     transform: translate(650%,400%);
-
 }
 .six{
     transform: translateY(450%);
 }
 .seven{
     transform: translate(-650%,400%);
-
 }
 .eight{
     transform: translate(-950%,200%);
