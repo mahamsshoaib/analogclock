@@ -1,129 +1,140 @@
-*{
+
+/* Global CSS reset */
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-size:3vw;
-    color:white;
-    
+    font-size: 3vw;
+    color: white;
 }
-body{
-    height: 100vh;;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(35deg, #6d4c05, #9e1393);
-}
-.main-container{
-    width:80%;
-    height:90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius:50%;
-    margin:4%; 
-    border:2px solid white;
-    width:40vw;
-    height:40vw;
-    box-shadow: inset 50px 50px 50px 50px rgba(241, 224, 209, 0.5);
 
+/* Styling for the entire webpage */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Background gradient with animation */
+    background: linear-gradient(35deg, #6d4c05, #9e1393);
+    animation: animate 10s linear infinite;
 }
-.clock{
-    border:10px solid rgb(32, 20, 10);
-    width:39vw;
-    height:39vw;
+
+/* Styling for the outer border container */
+.border-container {
+    width: 46vw;
+    height: 46vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 4%;
+    border: 2px solid rgb(31, 13, 13);
+    box-shadow: inset 50px 50px 50px 50px rgba(59, 28, 1, 0.932);
+}
+
+/* Styling for the main container */
+.main-container {
+    width: 41vw;
+    height: 41vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 4%;
+    border: 2px solid rgb(66, 49, 2);
+    box-shadow: inset 50px 50px 50px 50px rgba(194, 191, 9, 0.5);
+}
+
+/* Styling for the clock face */
+.clock {
+    border: 10px solid rgb(32, 20, 10);
+    width: 39vw;
+    height: 39vw;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    box-shadow: 50px 50px 50px 50px rgba(77, 52, 31, 0.5);
-    background: linear-gradient(35deg, #043f1b, #9e1393);
+    box-shadow: inset 150px 150px 50px 150px rgba(77, 52, 31, 0.5);
+    background: radial-gradient(circle, #043f1b, #020002);
 }
-.dot{
+
+/* Styling for the center dot of the clock */
+.dot {
     position: absolute;
     font-weight: bold;
-    transform-origin:center;
-    width:5%;
-    height:5%;
-    border-radius:50%;
-    background-color: #fff;;
+    transform-origin: center;
+    width: 5%;
+    height: 5%;
+    border-radius: 50%;
+    background-color: #fff;
 }
-.hands{
-    position:absolute;
+
+/* Styling for the clock hands */
+.hands {
+    position: absolute;
     background-color: #fff;
     transform-origin: bottom;
-}
-.hours-hand{
-    width:4px;
-    height:7.5vw;
-    top:30%; 
-    
-}
-.minutes-hand{
-
-    width:4px;
-    height:14vw;
-    top:12%;
+    display: none; /* Initially hidden */
 }
 
+/* Styling for the hours hand */
+.hours-hand {
+    width: 4px;
+    height: 7.5vw;
+    top: 30%;
+}
+
+/* Styling for the minutes hand */
+.minutes-hand {
+    width: 4px;
+    height: 14vw;
+    top: 12%;
+}
+
+/* Styling for the seconds hand */
 .seconds-hand {
-    width:2px;
-    height:14vw;
-    top:12%;  
+    width: 2px;
+    height: 14vw;
+    top: 12%;
 }
-.number{
+
+/* Styling for the clock numbers */
+.number {
     position: absolute;
-    transform-origin:center;
-    font-weight:bold;
-}
-.one{
-    transform: translate(550%,-400%);
-}
-.two{
-    transform: translate(950%,-200%);
-}
-.three{
-    transform: translateX(1100%);
-}
-.four{
-    transform: translate(950%,200%);
-}
-.five{
-    transform: translate(650%,400%);
-}
-.six{
-    transform: translateY(450%);
-}
-.seven{
-    transform: translate(-650%,400%);
-}
-.eight{
-    transform: translate(-950%,200%);
-}
-.nine{
-    transform:translateX(-1100%);
-}
-.ten{
-    transform: translate(-470%,-200%);
-}
-.eleven{
-    transform: translate(-340%,-388%);
-}
-.tewelve{
-    transform: translateY(-450%);
+    font-weight: bold;
+    transform-origin: center;
+    width: 100%;
+    text-align: center;
+    --distance: 32%; /* Adjust distance from center */
+    transform: rotate(calc(var(--angle) * 1deg)) translateY(calc(-400% - var(--distance))) rotate(calc(-1 * var(--angle) * 1deg));
 }
 
-/*Media Queries*/
-/* @media (max-width:800px)
-{
-    .clock{
-        width:50vw;
-        height:50vw;
-    }
-    .main-container{
-        width:51vw;
-        height:51vw;
-    }
-    
-} */
+/* Styling for individual clock numbers */
+.one { --angle: 30 }
+.two { --angle: 60 }
+.three { --angle: 90 }
+.four { --angle: 120 }
+.five { --angle: 150 }
+.six { --angle: 180 }
+.seven { --angle: 210 }
+.eight { --angle: 240 }
+.nine { --angle: 270 }
+.ten { --angle: 300 }
+.eleven { --angle: 330 }
+.tewelve { --angle: 0 }
 
+/* Animation for background color change */
+@keyframes animate {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 800px) {
+    .number {
+        /* Adjust distance for smaller screens */
+        transform: rotate(calc(var(--angle) * 1deg)) translateY(calc(-370% - var(--distance))) rotate(calc(-1 * var(--angle) * 1deg));
+    }
+}
