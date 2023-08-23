@@ -23,10 +23,10 @@ An interactive analog clock built using HTML, CSS, and JavaScript. The clock dis
 - Stylish design with customizable colors and layout
 - Responsive design that adapts to different screen sizes
 
-Prerequisites
+## Prerequisites
 1.Modern web browser (Chrome, Firefox, Safari, etc.)
 
-Files
+## Files
 1.index.html: Contains the HTML structure for the digital clock.
 2.style.css: Defines the visual styling and layout of the digital clock.
 3.clock.js: Provides the JavaScript logic to update the clock every second.
@@ -43,13 +43,13 @@ cd analog-clock
 
 3.Open the index.html file in a web browser.
 
-Usage
+## Usage
 The analog clock will be displayed on the page with the clock hands indicating the current time. The hands move smoothly to show the passage of time.
 
-Customization
+## Customization
 You can customize the clock's appearance by modifying the CSS styles in the style.css file. Adjust the colors, sizes, and layouts to match your desired design.
 
-Contributions
+## Contributions
 Contributions are welcome! If you find a bug or have an improvement in mind, feel free to open an issue or create a pull request.
 
 1.Fork the repository.
@@ -58,8 +58,8 @@ Contributions are welcome! If you find a bug or have an improvement in mind, fee
 4.Push your changes to the branch: git push origin feature-name
 5.Open a pull request.
 
-Credits
+## Credits
 This project was created by Maham Shoaib and is inspired by various CSS animations and layout techniques found on the web.
 
-License
+## License
 This work is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
