@@ -16,6 +16,9 @@ document.addEventListener('DOMContentLoaded', function () {
     hourHand.style.transform = `rotate(${hourRotation}deg)`;
     minuteHand.style.transform = `rotate(${minuteRotation}deg)`;
     secondHand.style.transform = `rotate(${secondRotation}deg)`;
+
+    /*let sound=new Audio ('sound.mp3');
+    sound.play();*/
     
 }
   
