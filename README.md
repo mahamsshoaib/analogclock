@@ -1,3 +1,5 @@
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/)
 # Analog Clock
 
 An interactive analog clock built using HTML, CSS, and JavaScript. The clock displays the current time with smooth hand movements and a visually appealing design.
