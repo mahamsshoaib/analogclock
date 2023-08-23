@@ -1,33 +1,52 @@
+Certainly! Here's the HTML code with comments explaining each section:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <script src="clock.js"></script>
-  <title>Analog Clock</title>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to external JavaScript file -->
+    <script src="clock.js"></script>
+    <!-- Title of the page -->
+    <title>Analog Clock</title>
 </head>
+
 <body>
-  <div class="main-container">
-    <div class="clock">
-        <div class="dot"></div>
-        <div class="hands hours-hand" id="hours-hand"></div>
-        <div class="hands minutes-hand" id="minutes-hand"></div>
-        <div class="hands seconds-hand" id="seconds-hand">
+    <!-- Outer container for adding a border -->
+    <div class="border-container">
+        <!-- Main container for the clock -->
+        <div class="main-container">
+            <!-- Clock face -->
+            <div class="clock">
+                <!-- Center dot of the clock -->
+                <div class="dot"></div>
+                <!-- Hour hand -->
+                <div class="hands hours-hand" id="hours-hand"></div>
+                <!-- Minutes hand -->
+                <div class="hands minutes-hand" id="minutes-hand"></div>
+                <!-- Seconds hand -->
+                <div class="hands seconds-hand" id="seconds-hand"></div>
+                <!-- Hour numbers around the clock -->
+                <div class="number one">1</div>
+                <div class="number two">2</div>
+                <div class="number three">3</div>
+                <div class="number four">4</div>
+                <div class="number five">5</div>
+                <div class="number six">6</div>
+                <div class="number seven">7</div>
+                <div class="number eight">8</div>
+                <div class="number nine">9</div>
+                <div class="number ten">10</div>
+                <div class="number eleven">11</div>
+                <div class="number twelve">12</div>
+            </div>
         </div>
-        <div class="number one">1</div>
-        <div class="number two">2</div>
-        <div class="number three">3</div>
-        <div class="number four">4</div>
-        <div class="number five">5</div>
-        <div class="number six">6</div>
-        <div class="number seven">7</div>
-        <div class="number eight">8</div>
-        <div class="number nine">9</div>
-        <div class="number ten">10</div>
-        <div class="number eleven">11</div>
-        <div class="number tewelve">12</div>
     </div>
-  </div>
 </body>
+
 </html>
